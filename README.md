@@ -1,7 +1,4 @@
 # WHATTHESHELL-A-Custom-Unix-Shell-Implementation
-
-# Custom Shell (WHATTHESHELL)
-
 ## Introduction
 This project is an implementation of a **Command Line Interface (CLI)** for the Advanced Operating Systems course (CSCI-P 536, Spring 2025). The shell supports file redirection, pipes, background execution, and error handling using system calls.
 
