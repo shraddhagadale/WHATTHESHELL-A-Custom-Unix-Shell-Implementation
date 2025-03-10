@@ -39,9 +39,9 @@ To start the shell, execute:
 This shell follows the given grammar:
 - command line: cmd [< fn] [| cmd]* [> fn] [&] EOL
 - cmd: cn [ar]*
-- cn: <string>   # Command name
-- fn: <string>   # File name
-- ar: <string>   # Argument
+- cn: <string>    # Command name
+- fn: <string>    # File name
+- ar: <string>    # Argument
 - &: Background execution
 
 
