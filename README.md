@@ -2,23 +2,38 @@
 
 # Custom Shell (WHATTHESHELL)
 
+## Introduction
 This project is an implementation of a **Command Line Interface (CLI)** for the Advanced Operating Systems course (CSCI-P 536, Spring 2025). The shell supports file redirection, pipes, background execution, and error handling using system calls.
 
+## Purpose
+The purpose of this project is to gain a concrete understanding of how command-line interfaces (CLIs) work by implementing:
+- Command parsing and execution.
+- Handling multiple parameters and various operators.
+- Utilizing system calls such as `fork()`, `wait()`, `execvp()`, `open()`, `close()`, `dup()`, `dup2()`, and `pipe()`.
+
 ## Features
-✔️ **Error handling**: Differentiates invalid commands  
-✔️ **File redirection** (`<`, `>`)  
-✔️ **Multiple pipes** (`|`)  
-✔️ **Background process execution** (`&`)  
-✔️ **System calls used**: `fork()`, `execvp()`, `pipe()`, `dup2()`, `wait()`, `open()`, `close()`
+This shell supports the following functionalities:
+- **Executing commands** (e.g., `ls`, `cat file.txt`).
+- **Error handling** for invalid commands.
+- **File redirection** using `<` (input) and `>` (output).
+- **Piping (`|`)** to chain multiple commands.
+- **Background execution (`&`)**.
 
-## Installation & Compilation
-Clone the repository and use the Makefile to compile:
-- cd os-lab-1-cli
-- make
+## Installation & Setup
+### Prerequisites
+- **Linux/macOS** environment.
+- **GCC compiler** installed.
 
-## Usage
-Run the shell:
+### Compilation
+To compile the shell, run:
+```sh
+make
+```
+### Running the Shell
+To start the shell, execute:
+```sh
 ./myshell
+```
 
 ## Design & Implementation
 This shell follows the given grammar:
